@@ -1,0 +1,19 @@
+view,
+swiper,
+swiper-item,
+text {
+	box-sizing: border-box;
+}
+page {
+	height: 100%;
+}
+text {
+	font-size: 14px;
+}
+.clearfix:after {
+	content: '.';
+	height: 1px;
+	visibility: hidden;
+	display: block;
+	clear: both;
+}

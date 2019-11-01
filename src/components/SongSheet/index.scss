@@ -1,0 +1,25 @@
+.songsheet-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .songsheet-wrapper_bg {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+  }
+  .songsheet-wrapper_count {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    color: #ffff;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    line-height: 15px;
+    .recommend-content-item_count_icon {
+      width: 14px;
+      height: 14px;
+      margin: 0px 4px 1px 0px;
+    }
+  }
+}

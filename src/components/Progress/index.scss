@@ -1,0 +1,51 @@
+@keyframes waiting {
+	0% {
+		background-color: #fff;
+	}
+	50% {
+		background-color: $theme-color;
+	}
+	100% {
+		background-color: $theme-color;
+	}
+}
+.progress-cpt {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.progress-time {
+		width: 40px;
+		color: rgba(255,255,255,.8);
+		color: #eee;
+		font-size: 10px;
+		text-align: center;
+	}
+	.progress-base-bar {
+		flex: 1;
+		height: 2px;
+		border-radius: 1px;
+		position: relative;
+		background-color: rgba(255,255,255,0.4);
+		.progress-current-bar {
+			height: 2px;
+			border-radius: 1px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			background-color: rgba(255,255,255,0.8);
+		}
+		.progress-current-location {
+			width: 6px;
+			height: 6px;
+			border-radius: 3px;
+			background-color: #fff;
+			position: absolute;
+			top: -2px;
+			left: 0px;
+			&.waiting {
+				animation: waiting 1s infinite;
+			}
+		}
+	}
+}

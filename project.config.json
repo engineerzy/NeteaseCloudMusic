@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./dist",
+  "projectname": "NeteaseCloudMusic",
+  "description": "NeteaseCloudMusic",
+  "appid": "wx7faf7b6e81586fc1",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}

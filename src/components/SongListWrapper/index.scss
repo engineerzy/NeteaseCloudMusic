@@ -1,0 +1,39 @@
+.song-list-wrapper {
+  width: 100%;
+  background-color: #fff;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+
+  .song-list-title {
+    height: 40px;
+    padding: 16px 16px 10px;
+    background-color: #fff;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+    .list-title-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 6px;
+    }
+
+    .list-title-info {
+      font-size: 16px;
+      color: #000000;
+
+      .song-list-length {
+        font-size: 12px;
+        color: #cccccc;
+      }
+    }
+  }
+
+  .song-list-content {
+	padding: 0px 16px;
+  }
+}
