@@ -3,7 +3,6 @@ import { action } from '@/utils'
 import * as api from 'api'
 
 enum PlayPatterns { loop, one, shuffle }
-
 export default {
 	namespace: 'playModel',
 	state: {
@@ -37,7 +36,7 @@ export default {
 					ar: currentDetail.ar,
 					index:  musicIds.songs.findIndex(e => +e.id === +payload.id)
 				}
-				
+
 				yield put(action('modifyState', { musicIds, currentMusic }))
 			} else {
 				Taro.showToast({
@@ -49,7 +48,7 @@ export default {
 		},
 
 		/**
-		 * 
+		 *
 		 * 获取全量待播放歌曲详情
 		 */
 		*getStayMusicDetails({ payload }, { call, put }) {

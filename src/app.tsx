@@ -1,18 +1,18 @@
 import Taro, { Component, Config} from '@tarojs/taro'
 import { Provider } from '@tarojs/redux'
 import Index from './pages/index'
-import '@tarojs/async-await'
-import './app.scss'
-import './assets/font/iconfont.css';
 import dva from './dva'
 import models from './models'
-
+// import '@tarojs/async-await'
+import './app.scss'
+import './assets/font/iconfont.css';
 
 
 const dvaApp = dva.createApp({
 	initialState: {},
 	models
   })
+
 const store = dvaApp.getStore()
 class App extends Component {
 
@@ -78,7 +78,7 @@ class App extends Component {
   render () {
     return (
 		<Provider store={store}>
-			<Index  />
+			<Index />
 		</Provider>
     )
   }
